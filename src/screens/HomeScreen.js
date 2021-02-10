@@ -13,7 +13,7 @@ const HomeScreen = () => {
     <ScrollView>
       <Text>Some text</Text>
       <View>
-        <Text style={styles.text}>Somesssssssssssssssssssssxt</Text>
+        <Text style={styles.text}>Some text</Text>
         <Image
           source={{
             uri: "https://reactnative.dev/docs/assets/p_cat2.png",
@@ -23,7 +23,7 @@ const HomeScreen = () => {
       </View>
       <TextInput
         style={{
-          height: 40,
+          height: 400,
           borderColor: "gray",
           borderWidth: 1,
         }}
