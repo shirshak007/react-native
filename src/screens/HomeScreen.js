@@ -4,31 +4,54 @@ import {
   Text,
   Image,
   ScrollView,
-  TextInput,
+  Button,
   StyleSheet,
+  TouchableOpacity,
 } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
+  // console.log(props.navigation);
   return (
     <ScrollView>
-      <Text>Some text</Text>
       <View>
         <Text style={styles.text}>Some text</Text>
-        <Image
+        <Button
+          title="Components"
+          onPress={() => {
+            navigation.navigate("Components");
+          }}
+        />
+        <Button
+          title="List"
+          onPress={() => {
+            navigation.navigate("List");
+          }}
+        />
+        <Button
+          title="Image"
+          onPress={() => {
+            navigation.navigate("Image");
+          }}
+        />
+        <Button
+          title="Counter"
+          onPress={() => {
+            navigation.navigate("Counter");
+          }}
+        />
+        <Button
+          title="Colour"
+          onPress={() => {
+            navigation.navigate("Color");
+          }}
+        />
+        {/* <Image
           source={{
             uri: "https://reactnative.dev/docs/assets/p_cat2.png",
           }}
           style={styles.img}
-        />
+        /> */}
       </View>
-      <TextInput
-        style={{
-          height: 400,
-          borderColor: "gray",
-          borderWidth: 1,
-        }}
-        defaultValue="You can type in me"
-      />
     </ScrollView>
   );
 };
